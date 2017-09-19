@@ -7,6 +7,7 @@ html, body {
 body {
 	font-size:100%;
 	font-family:Exo;
+	background: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);
 }
 
 .wrapper {
@@ -40,4 +41,40 @@ header img:last-of-type {
 	width:50%;
 	display:block;
 	opacity:0;
+}
+
+nav {
+
+}
+
+nav ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+
+nav ul li {
+	float:left;
+	width:16.66666666666667%;
+	padding:1% 0%;
+	text-align:center;
+	background:#F44336;
+}
+
+nav ul li a {
+	color:white;
+	font-size:23px;
+	text-decoration:none;
+}
+
+nav ul .blocked {
+	cursor:not-allowed;
+}
+
+nav ul li a:hover, nav ul li a:focus {
+
+}
+
+nav ul li a:visited {
+
 }
