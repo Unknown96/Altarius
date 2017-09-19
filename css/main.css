@@ -44,7 +44,7 @@ header img:last-of-type {
 }
 
 nav {
-
+	margin-bottom:6%;
 }
 
 nav ul {
@@ -53,28 +53,35 @@ nav ul {
 	padding:0;
 }
 
-nav ul li {
+nav ul a li {
+	transition:background .3s, padding .3s;
+	background:#F44336;
 	float:left;
 	width:16.66666666666667%;
 	padding:1% 0%;
 	text-align:center;
-	background:#F44336;
-}
-
-nav ul li a {
 	color:white;
-	font-size:23px;
-	text-decoration:none;
 }
 
-nav ul .blocked {
+nav ul a {
+	font-size:23px;
+}
+
+nav ul a li:hover {
+	background:#D32F2F;
+}
+
+nav ul li:hover {
+	padding-bottom:1.5%;
+}
+
+.blocked {
 	cursor:not-allowed;
 }
 
-nav ul li a:hover, nav ul li a:focus {
-
-}
-
-nav ul li a:visited {
-
+.banner {
+	width:35%;
+	display: block;
+	margin:20px auto;
+	margin-top:10%;
 }
