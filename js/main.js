@@ -26,11 +26,13 @@ $(document).ready(function() {
 	$(window).resize(function() {
 		var height = $('#logo').width();
 		var img = $('#oneteam')
-		console.log(height)
 		img.css('top', height/3);
 	})
 	
 
+	$('.slider').hover(function() {
+		$('.slider').find('h1').slideToggle(400);
+	})
 });
 
 
