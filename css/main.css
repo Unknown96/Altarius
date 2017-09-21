@@ -75,6 +75,100 @@ nav ul li:hover {
 	cursor:not-allowed;
 }
 
+.blur {
+	display:none;
+	background:rgba(0,0,0,.5);
+	position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 10;
+}
+
+.notify {
+	position:fixed;
+	width:30%;
+	max-height:35%;
+	left:0;top:0;right:0;bottom:0;
+	background: linear-gradient(to top, #29323c 0%, #485563 100%);
+	margin:auto;
+	display:inline-block;
+}
+
+.notify h1 {
+	text-align:center;
+	margin:0;
+	padding:2%;
+	background:rgba(0,0,0,.2);
+	color:white;
+}
+
+.notify span {
+	transition:color .15s;
+	float:right;
+	font-family:Arial;
+	font-weight:normal;
+	cursor:pointer;
+}
+
+.notify .msg {
+	display:none;
+}
+
+.notify span:hover, .notify span:focus {
+	color:#f44336;
+}
+
+.notify p {
+	margin:2%;
+	padding:2%;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	border:1px solid rgba(0,0,0,.3);
+	background: rgba(0,0,0,.15);
+	color:rgba(255,255,255,.7);
+	text-align:center;
+}
+
+.notify input {
+	display:block;
+	outline:none;
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.05);
+	border:1px solid rgba(0,0,0,.3);
+	background: rgba(0,0,0,.15);
+	color:rgba(255,255,255,.7);
+	padding:2%;
+	font-size:18px;
+	color:#43A047;
+	text-align:center;
+	margin:7% auto;
+}
+
+.notify button {
+	display:none;
+	transition:box-shadow .2s;
+	padding:2% 4%;
+	font-size:18px;
+	color:white;
+	border:0;
+	border-radius:5px;
+	margin-left:20%;
+	cursor:pointer;
+}
+
+.notify button:hover, .notify button:focus {
+	outline:none;
+	box-shadow: inset 0px 0px 15px 1px rgba(0,0,0,0.75);
+}
+
+.notify .confirm {
+	background:#43A047;
+}
+
+.notify .cancel {
+	background:#F44336;
+}
+
 .banner {
 	width:35%;
 	display: block;
@@ -221,4 +315,13 @@ footer .info p  {
 	font-family:Exo;
 	display:inline-block;
 	font-size:16px;
+}
+
+footer .info .clickable:hover {
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+footer ul:last-of-type li {
+	cursor:pointer;
 }
