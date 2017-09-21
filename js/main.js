@@ -52,7 +52,7 @@ $(document).ready(function() {
 		var notify = $('.blur')
 		notify.find('p').html('Login using your access key.')
 		notify.find('input').css('display', 'block')
-		notify.find('button').show()
+		notify.find('button').show();
 		$('.blur').fadeToggle(400);
 	});
 
