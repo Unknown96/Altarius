@@ -32,7 +32,37 @@ $(document).ready(function() {
 
 	$('.slider').hover(function() {
 		$('.slider').find('h1').slideToggle(400);
+
 	})
+
+	$('.author').click(function() {
+		$('.blur p').html('Author: Robin Kastorp<br>Contact: Altarius@gmail.com')
+		$('.blur').fadeToggle(400);
+
+	});
+
+	$('.blur span').click(function() {
+	var notify = $('.blur')
+		notify.fadeToggle(400);
+		notify.find('button').hide()
+		notify.find('input').hide()
+	});
+
+	$('.admin').click(function() {
+		var notify = $('.blur')
+		notify.find('p').html('Login using your access key.')
+		notify.find('input').css('display', 'block')
+		notify.find('button').show()
+		$('.blur').fadeToggle(400);
+	});
+
+	$('.blur .cancel').click(function() {
+	var notify = $('.blur')
+		notify.fadeToggle(400);
+		notify.find('button').hide()
+		notify.find('input').hide()
+	});
+
 });
 
 
